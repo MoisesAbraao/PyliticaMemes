@@ -2,7 +2,6 @@
 import pygame
 from os import path
 
-# pygame.mixer.init()
 pygame.init()
 
 def mandioca():
