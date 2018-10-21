@@ -1,4 +1,4 @@
-from pyliticamemes import cabodaciolo, dilma
+from pyliticamemes import cabodaciolo, dilma, bolsonaro
 # cabodaciolo.gloriadeux()
 # dilma.bola()
 
