@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='Pyliticamemes',
-    version='0.1',
+    version='0.2.0',
     url='https://github.com/MoisesAbraao/PyliticaMemes',
     license='MIT',
     author='Moises Abraao',
@@ -10,7 +10,10 @@ setup(
     description='zoeira com os memes da politica brasileira',
     long_description='',
     packages=['pyliticamemes'],
-    install_requires=['pygame>=1.9.4'],
+    install_requires=['pydub'],
+    package_data={
+        'pyliticamemes': ['sounds/*'],
+    },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Other Environment',
