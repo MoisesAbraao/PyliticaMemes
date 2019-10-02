@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
-import pygame
 from os import path
 
-pygame.init()
+from pydub import AudioSegment
+from pydub.playback import play
+
 
 def risada():
-    pygame.mixer.music.load(path.join(path.abspath('pyliticamemes/sounds'), 'risada.mp3'))
-    pygame.mixer.music.play()
-    input()
+    sound = AudioSegment.from_mp3(
+        path.join(path.dirname(__file__), 'sounds', 'risada.mp3'))
+    play(sound)
 
 def daqueeutedououtra():
-    pygame.mixer.music.load(path.join(path.abspath('pyliticamemes/sounds'), 'daqueeutedououtra.mp3'))
-    pygame.mixer.music.play()
-    input()
+    sound = AudioSegment.from_mp3(
+        path.join(path.dirname(__file__), 'sounds', 'daqueeutedououtra.mp3'))
+    play(sound)
