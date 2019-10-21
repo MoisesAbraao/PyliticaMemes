@@ -19,3 +19,8 @@ def vaiperder():
     sound = AudioSegment.from_mp3(
         path.join(path.dirname(__file__), 'sounds', 'dilma', 'vaitodomundoperder.mp3'))
     play(sound)
+
+def saomulheres():
+    sound = AudioSegment.from_mp3(
+        path.join(path.dirname(__file__), 'sounds', 'dilma', 'saomulheres.mp3'))
+    play(sound)
